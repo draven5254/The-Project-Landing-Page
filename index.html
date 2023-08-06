@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <!-- BACKGROUND SECTION -->
+
+    <section class="bg-hero"></section>
+
+    <!-- NAVBAR SECTION -->
+
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./img/gundam.info.png" alt="logo image" />
+      </div>
+      <ul class="list-item">
+        <li class="link-item"><a href="/">Home</a></li>
+        <li class="link-item"><a href="/">About</a></li>
+        <li class="link-item"><a href="/">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-img">
+          <div class="hero-img-1">
+            <img src="./img/logo.png" alt="" />
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
+            incidunt quis ad maxime officiis neque eius? Sequi facilis
+            voluptatibus reiciendis.
+          </p>
+          <button class="btn">Explore</button>
+        </div>
+
+        <div data-aos="fade-left" data-aos-duration="2000">
+          <div class="hero-placeholder">
+            <video src="./vid/Gundam intro.mp4" controls autoplay>
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFORMATION SECTION -->
+
+    <section class="info">
+      <h2 class="info-title">Mobile Suit Gundams</h2>
+      <div class="box-container">
+        <div class="box">
+          <img
+            src="./img/img-1.png"
+            onmouseover="this.src='./img/Gundam-1.png ';"
+            onmouseout="this.src='./img/img-1.png';" />
+          <p class="box-info">RX-78-2 Gundam</p>
+        </div>
+
+        <div class="box">
+          <img
+            src="./img/img-2.png"
+            onmouseover="this.src='./img/gundam-2.png';"
+            onmouseout="this.src='./img/img-2.png';" />
+          <p class="box-info">GAT-X105 Strike Gundam</p>
+        </div>
+
+        <div class="box">
+          <img
+            src="./img/img-3.png"
+            onmouseover="this.src='./img/gundam-3.png ';"
+            onmouseout="this.src='./img/img-3.png';" />
+          <p class="box-info">XM-X1 Crossbone Gundam X-1</p>
+        </div>
+
+        <div class="box">
+          <img
+            src="./img/img-4.png"
+            onmouseover="this.src='./img/gundam-4.png ';"
+            onmouseout="this.src='./img/img-4.png';" />
+          <p class="box-info margin-top">MBF-P02 Gundam Astray Red Frame</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTES SECTION -->
+
+    <section class="quotes-container">
+      <div class="quotes-box">
+        <div data-aos="fade-right " data-aos-duration="2000">
+          <div class="quotes-video-placeholder">
+            <video src="./vid/gundam ost.mp4" controls>
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <div class="quotes-text-placeholder">
+          <p class="quotes-text">
+            "If you don't do something because you think you can't do it, you'll
+            never be able to do anything in the."
+          </p>
+          <h3 class="quotes-author">-Kira Yamato / Mobile Suit Gundam</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+
+    <footer class="footer">
+      <p>Copyright © The Odin Project 2021</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
